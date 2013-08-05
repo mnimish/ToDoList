@@ -21,7 +21,6 @@
 		1414B3F317AD81FC007B36ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1414B3D517AD81FB007B36ED /* UIKit.framework */; };
 		1414B3FB17AD81FC007B36ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1414B3F917AD81FC007B36ED /* InfoPlist.strings */; };
 		1414B3FD17AD81FC007B36ED /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1414B3FC17AD81FC007B36ED /* ToDoListTests.m */; };
-		1414B44317AE4A16007B36ED /* InLineEditTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1414B44217AE4720007B36ED /* InLineEditTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +53,6 @@
 		1414B3F817AD81FC007B36ED /* ToDoListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToDoListTests-Info.plist"; sourceTree = "<group>"; };
 		1414B3FA17AD81FC007B36ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1414B3FC17AD81FC007B36ED /* ToDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListTests.m; sourceTree = "<group>"; };
-		1414B44117AE471F007B36ED /* InLineEditTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InLineEditTableViewCell.h; sourceTree = "<group>"; };
-		1414B44217AE4720007B36ED /* InLineEditTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InLineEditTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +119,6 @@
 				1414B3E717AD81FB007B36ED /* ViewController.m */,
 				1414B3E917AD81FB007B36ED /* Images.xcassets */,
 				1414B3D817AD81FB007B36ED /* Supporting Files */,
-				1414B44117AE471F007B36ED /* InLineEditTableViewCell.h */,
-				1414B44217AE4720007B36ED /* InLineEditTableViewCell.m */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -254,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1414B44317AE4A16007B36ED /* InLineEditTableViewCell.m in Sources */,
 				1414B3E817AD81FB007B36ED /* ViewController.m in Sources */,
 				1414B3E217AD81FB007B36ED /* AppDelegate.m in Sources */,
 				1414B3DE17AD81FB007B36ED /* main.m in Sources */,
