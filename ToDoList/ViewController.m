@@ -13,6 +13,7 @@
 - (void) onAddButton;
 - (void) showHideEditButton:(BOOL) show;
 - (void) showHideAddButton:(BOOL) show;
+- (void) handleTableViewCellLongPress:(UILongPressGestureRecognizer *)gesture;
 
 @end
 
@@ -81,6 +82,18 @@
     }
 }
 
+//edit cell on prolonged press
+- (void) handleTableViewCellLongPress:(UILongPressGestureRecognizer *)gesture
+{
+    if (gesture.state != UIGestureRecognizerStateBegan)
+        return;
+    
+    UITableViewCell *cell = (UITableViewCell *)gesture.view;
+    UITextField *textField = cell.contentView.subviews[0];
+    textField.userInteractionEnabled = YES;
+    [textField becomeFirstResponder];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -110,6 +123,9 @@
         textField.userInteractionEnabled = NO;
         textField.tag = indexPath.row;
         textField.text = [self.list objectAtIndex:indexPath.row];
+        UILongPressGestureRecognizer *gesture = [[UILongPressGestureRecognizer alloc]
+                                                  initWithTarget:self action:@selector(handleTableViewCellLongPress:)];
+        [cell addGestureRecognizer:gesture];
     } else {    //Assign cell tag
         textField = cell.contentView.subviews[0];
         textField.tag = indexPath.row;
